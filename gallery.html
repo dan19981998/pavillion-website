@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gallery - The Pavilion at Oscar's Estate">
+    <title>Gallery | Oscars Estate</title>
+    <link rel="icon" type="image/png" href="assets/images/fav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header header--dark">
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-menu">
+            <span class="menu-toggle__lines" aria-hidden="true">
+                <span></span>
+                <span></span>
+            </span>
+            <span class="menu-toggle__label">Menu</span>
+        </button>
+
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo-white.png" alt="Oscar's Estate">
+        </a>
+    </header>
+
+    <div class="site-menu" id="site-menu">
+        <nav class="site-menu__panel" aria-label="Main">
+            <button type="button" class="site-menu__close" aria-label="Close menu"></button>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#spaces">Our Spaces</a></li>
+                <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                <li><a href="brochure.html">Brochure</a></li>
+                <li><a href="index.html#faq">FAQs</a></li>
+                <li><a href="#enquire">Enquire</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="gallery gallery--page">
+            <img class="gallery__vector" src="assets/images/Vector.png" alt="" aria-hidden="true">
+
+            <div class="gallery__intro">
+                <p class="eyebrow">Making memories</p>
+            </div>
+
+            <div class="gallery__head">
+                <h1 class="gallery__title">Events worth<br> remembering</h1>
+                <p class="gallery__sub">View our gallery</p>
+
+                <div class="gallery__filters">
+                    <button type="button" data-filter="all" aria-pressed="true">All images</button>
+                    <button type="button" data-filter="venue" aria-pressed="false">The Venue</button>
+                    <button type="button" data-filter="accommodation" aria-pressed="false">Accommodation</button>
+                    <button type="button" data-filter="nature" aria-pressed="false">Nature spotting</button>
+                    <button type="button" data-filter="ceremonies" aria-pressed="false">Ceremonies</button>
+                </div>
+            </div>
+
+            <div class="gallery__viewport">
+                <ul class="gallery__track">
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/slider1.jpg"
+                            alt="The Pavilion" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="ceremonies"><img src="assets/images/testimonial-couple.jpg"
+                            alt="A couple on their wedding day" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="accommodation"><img src="assets/images/slider4.jpg"
+                            alt="The Patience Cottage" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/slider2.jpg"
+                            alt="The Annexe bar" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="nature"><img src="assets/images/slider6.jpg"
+                            alt="The Walled Garden" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/slider5.webp"
+                            alt="The Cocktail Terrace" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="accommodation"><img src="assets/images/sectionimg.jpg"
+                            alt="The cottage at dusk" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/testimonials-bg.jpg"
+                            alt="The front of The Pavilion" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/brochureimage.jpg"
+                            alt="The Pavilion at Oscar's Estate" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/brochureimage2.jpg"
+                            alt="The Pavilion at Oscar's Estate" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="nature"><img src="assets/images/brochureimage3.jpg"
+                            alt="The Walled Garden" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/brochureimage4.jpg"
+                            alt="The Annexe at The Pavilion" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/brochureimage5.jpg"
+                            alt="Inside The Pavilion" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="accommodation"><img src="assets/images/brochureimage6.jpg"
+                            alt="Patience Cottage" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="ceremonies"><img src="assets/images/brochureimage7.jpg"
+                            alt="Wedding photography at Oscar's Estate" loading="lazy" draggable="false"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="enquire container" id="enquire">
+            <h2 class="enquire__title">Enquire about<br> your special day</h2>
+            <img class="enquire__logo" src="assets/images/logo-white.png" alt="" aria-hidden="true">
+            <p class="enquire__intro">Nestled within 140 acres of private parkland and gardens, our brand-new luxury
+                wedding venue offers a breathtaking setting for your special day.</p>
+
+            <form class="enquire__form">
+                <label class="field">
+                    <span>Name</span>
+                    <input type="text" name="name" placeholder="Robert Greene" autocomplete="name" required>
+                </label>
+
+                <label class="field">
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="robertgreene12@gmail.com" autocomplete="email"
+                        required>
+                </label>
+
+                <label class="field">
+                    <span>Phone number</span>
+                    <input type="tel" name="phone" placeholder="+44 7451 878210" autocomplete="tel">
+                </label>
+
+                <label class="field">
+                    <span>Event date</span>
+                    <input type="date" name="date">
+                </label>
+
+                <label class="field field--full">
+                    <span>Additional information</span>
+                    <textarea name="message" rows="5" placeholder="Your message here..."></textarea>
+                </label>
+
+                <button type="submit" class="enquire__submit">&rarr; Send Enquiry</button>
+            </form>
+        </section>
+
+        <section class="brochure">
+            <img class="brochure__img" src="assets/images/brochure.jpg" alt="The Pavilion and lawns at Oscar's Estate"
+                loading="lazy">
+
+            <div class="brochure__card">
+                <h2 class="brochure__title">Our wedding<br> package</h2>
+                <p class="brochure__body">Explore our comprehensive wedding package with all the details for your
+                    perfect day.</p>
+                <a href="brochure.html" class="button button--inline brochure__link">Read the brochure</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__info">
+            <p>Weddings, private gatherings and unhurried stays in the English countryside.</p>
+            <address>Oscars Estate, The Dr, Swinfen, Lichfield,<br> WS14 9RE, UK.</address>
+        </div>
+
+        <svg class="footer__wordmark" viewBox="0 0 1000 210" role="img" aria-label="Oscar's">
+            <text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs">OSCAR&rsquo;S</text>
+        </svg>
+    </footer>
+
+</body>
+
+</html>

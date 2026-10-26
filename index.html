@@ -30,16 +30,24 @@
         </a>
     </header>
 
-    <nav class="site-menu" id="site-menu" aria-label="Main">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="site-menu" id="site-menu">
+        <nav class="site-menu__panel" aria-label="Main">
+            <button type="button" class="site-menu__close" aria-label="Close menu"></button>
+
+            <ul>
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#spaces">Our Spaces</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="brochure.html">Brochure</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#enquire">Enquire</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <video class="hero__video" src="assets/images/hero-vid-web.mp4" autoplay muted loop playsinline></video>
 
             <div class="hero__content">
@@ -50,7 +58,7 @@
                     </p>
                 </div>
 
-                <a href="contact.html" class="button">Make an enquiry</a>
+                <a href="#enquire" class="button">Make an enquiry</a>
             </div>
         </section>
 
@@ -68,7 +76,7 @@
             </ul>
         </section>
 
-        <section class="intro container">
+        <section class="intro container" id="about">
             <img class="intro__vector" src="assets/images/Vector.png" alt="" aria-hidden="true">
 
             <p class="eyebrow">Making memories</p>
@@ -84,7 +92,7 @@
                         unique, stunning venue like no other. With ample space to host larger, multi-cultural
                         pre-nuptial events, alongside the serene beauty of lakes and parkland, our venue offers an
                         atmosphere of tranquility, that is unmatched in the Staffordshire.</p>
-                    <a href="contact.html" class="button button--inline">Enquire now &rarr;</a>
+                    <a href="#enquire" class="button button--inline">Enquire now &rarr;</a>
                 </div>
             </div>
         </section>
@@ -98,7 +106,7 @@
                     <h2 class="feature__title">A beautiful place to<br> celebrate properly.</h2>
                 </div>
 
-                <a href="contact.html" class="button">Enquire now &rarr;</a>
+                <a href="#enquire" class="button">Enquire now &rarr;</a>
             </div>
         </section>
 
@@ -119,12 +127,12 @@
             <article class="journey__item">
                 <p class="eyebrow">Sit back &amp; relax</p>
                 <h3 class="journey__title">Stay a little longer</h3>
-                <p>Whether it's for an outfit change, to relax or to stay over the night - our patience cottage
+                <p>Whether it's for an outfit change, to relax or to stay over the night - our Patience Cottage
                     attends all of your needs.</p>
             </article>
         </section>
 
-        <section class="stay container">
+        <section class="stay container" id="stay">
             <div class="stay__media">
                 <img src="assets/images/sectionimg.jpg" alt="The cottage at The Pavilion at dusk" loading="lazy">
             </div>
@@ -136,11 +144,328 @@
                     <h2 class="stay__title">Wake up where<br> the story happened.</h2>
                     <p class="stay__body">Tucked away in the grounds, our cottage lets you stay on after the last
                         dance. Wake to quiet parkland, a slow breakfast and one more look at where it all happened.</p>
-                    <a href="#" class="button button--inline">Discover the Pavilion</a>
+                    <a href="brochure.html" class="button button--inline">Discover the Pavilion</a>
                 </div>
             </div>
         </section>
+
+        <section class="spaces" id="spaces">
+            <div class="spaces__head container">
+                <p class="eyebrow">Whatever the event</p>
+                <h2 class="spaces__title">Our Spaces</h2>
+            </div>
+
+            <ul class="spaces__track" aria-label="Our spaces" tabindex="0">
+                <li class="space-card">
+                    <div class="space-card__media">
+                        <img src="assets/images/slider1.jpg" alt="The Pavilion" loading="lazy" draggable="false">
+                    </div>
+                    <h3 class="space-card__title">The Pavilion</h3>
+                    <p class="space-card__best">Best for: Grand Reception Parties.</p>
+                    <ul class="space-card__tags">
+                        <li>Warm lighting</li>
+                        <li>High ceilings</li>
+                    </ul>
+                </li>
+
+                <li class="space-card">
+                    <div class="space-card__media">
+                        <img src="assets/images/slider2.jpg" alt="The Annexe bar" loading="lazy" draggable="false">
+                    </div>
+                    <h3 class="space-card__title">The Annexe To The Pavilion</h3>
+                    <p class="space-card__best">Best for: Cocktail Reception.</p>
+                    <ul class="space-card__tags">
+                        <li>Luxurious bar</li>
+                        <li>Poser tables</li>
+                    </ul>
+                </li>
+
+                <li class="space-card">
+                    <div class="space-card__media">
+                        <img src="assets/images/slider5.webp" alt="The Cocktail Terrace" loading="lazy"
+                            draggable="false">
+                    </div>
+                    <h3 class="space-card__title">The Cocktail Terrace</h3>
+                    <p class="space-card__best">Best for: Sunset drinks, Socialising, Deer spotting.</p>
+                    <ul class="space-card__tags">
+                        <li>Firepits</li>
+                        <li>Cosy blankets</li>
+                    </ul>
+                </li>
+
+                <li class="space-card">
+                    <div class="space-card__media">
+                        <img src="assets/images/slider4.jpg" alt="The Patience Cottage" loading="lazy"
+                            draggable="false">
+                    </div>
+                    <h3 class="space-card__title">The Patience Cottage</h3>
+                    <p class="space-card__best">Best for: Outfit Changes, Relaxation, Rest.</p>
+                    <ul class="space-card__tags">
+                        <li>Mirrors</li>
+                        <li>Steamer</li>
+                        <li>Fridge</li>
+                    </ul>
+                </li>
+
+                <li class="space-card">
+                    <div class="space-card__media">
+                        <img src="assets/images/slider6.jpg" alt="The Walled Garden" loading="lazy" draggable="false">
+                    </div>
+                    <h3 class="space-card__title">The Walled Garden</h3>
+                    <p class="space-card__best">Best for: Drinks Reception &amp; Photography.</p>
+                    <ul class="space-card__tags">
+                        <li>Bandstand</li>
+                        <li>Pristine landscaping</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="enquire container" id="enquire">
+            <h2 class="enquire__title">Enquire about<br> your special day</h2>
+            <img class="enquire__logo" src="assets/images/logo-white.png" alt="" aria-hidden="true">
+            <p class="enquire__intro">Nestled within 140 acres of private parkland and gardens, our brand-new luxury
+                wedding venue offers a breathtaking setting for your special day.</p>
+
+            <form class="enquire__form">
+                <label class="field">
+                    <span>Name</span>
+                    <input type="text" name="name" placeholder="Robert Greene" autocomplete="name" required>
+                </label>
+
+                <label class="field">
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="robertgreene12@gmail.com" autocomplete="email"
+                        required>
+                </label>
+
+                <label class="field">
+                    <span>Phone number</span>
+                    <input type="tel" name="phone" placeholder="+44 7451 878210" autocomplete="tel">
+                </label>
+
+                <label class="field">
+                    <span>Event date</span>
+                    <input type="date" name="date">
+                </label>
+
+                <label class="field field--full">
+                    <span>Additional information</span>
+                    <textarea name="message" rows="5" placeholder="Your message here..."></textarea>
+                </label>
+
+                <button type="submit" class="enquire__submit">&rarr; Send Enquiry</button>
+            </form>
+        </section>
+
+        <section class="map" id="location">
+            <iframe class="map__frame" title="Map showing the location of The Pavilion at Oscar's"
+                src="https://maps.google.com/maps?q=The+Pavilion+at+Oscars,+Oscars+Estate,+The+Dr,+Swinfen,+Lichfield+WS14+9RE&amp;z=14&amp;output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <img class="testimonials__bg" src="assets/images/testimonials-bg.jpg" alt="" aria-hidden="true"
+                loading="lazy">
+
+            <div class="testimonials__cards">
+                <figure class="quote-card">
+                    <blockquote>
+                        <p class="quote-card__title">&ldquo;The best night of our lives&rdquo;</p>
+                        <p class="quote-card__body">From the walled garden to the last dance, every detail was taken
+                            care of. Our guests are still talking about it.</p>
+                    </blockquote>
+                    <figcaption class="quote-card__name">Laura &amp; Rob</figcaption>
+                </figure>
+
+                <figure class="quote-card quote-card--image">
+                    <img src="assets/images/testimonial-couple.jpg" alt="Mia and James on their wedding day"
+                        loading="lazy">
+                    <figcaption>
+                        <span class="quote-card__couple">Mia &amp; James</span>
+                        <span class="quote-card__body">Each bedroom is individual, quiet and deeply comfortable.
+                            Together they allow the celebration to continue without anyone having to leave it
+                            behind.</span>
+                    </figcaption>
+                </figure>
+
+                <figure class="quote-card">
+                    <blockquote>
+                        <p class="quote-card__title">&ldquo;Completely unforgettable&rdquo;</p>
+                        <p class="quote-card__body">The Pavilion felt like it was made for us. Relaxed, beautiful and
+                            surrounded by the people we love most.</p>
+                    </blockquote>
+                    <figcaption class="quote-card__name">Jasmine &amp; Sunny</figcaption>
+                </figure>
+            </div>
+
+            <div class="testimonials__head">
+                <h2 class="testimonials__title">Our<br> testimonials.</h2>
+                <p class="eyebrow">What people have said</p>
+            </div>
+        </section>
+
+        <section class="gallery" id="gallery">
+            <div class="gallery__head">
+                <h2 class="gallery__title">Events worth<br> remembering</h2>
+                <p class="gallery__sub">View our gallery</p>
+
+                <div class="gallery__filters">
+                    <button type="button" data-filter="all" aria-pressed="true">All images</button>
+                    <button type="button" data-filter="venue" aria-pressed="false">The Venue</button>
+                    <button type="button" data-filter="accommodation" aria-pressed="false">Accommodation</button>
+                    <button type="button" data-filter="nature" aria-pressed="false">Nature spotting</button>
+                    <button type="button" data-filter="ceremonies" aria-pressed="false">Ceremonies</button>
+                </div>
+            </div>
+
+            <div class="gallery__viewport">
+                <ul class="gallery__track">
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/slider1.jpg"
+                            alt="The Pavilion" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="ceremonies"><img src="assets/images/testimonial-couple.jpg"
+                            alt="A couple on their wedding day" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="accommodation"><img src="assets/images/slider4.jpg"
+                            alt="The Patience Cottage" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/slider2.jpg"
+                            alt="The Annexe bar" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="nature"><img src="assets/images/slider6.jpg"
+                            alt="The Walled Garden" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/slider5.webp"
+                            alt="The Cocktail Terrace" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="accommodation"><img src="assets/images/sectionimg.jpg"
+                            alt="The cottage at dusk" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/testimonials-bg.jpg"
+                            alt="The front of The Pavilion" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/brochureimage.jpg"
+                            alt="The Pavilion at Oscar's Estate" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/brochureimage2.jpg"
+                            alt="The Pavilion at Oscar's Estate" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="nature"><img src="assets/images/brochureimage3.jpg"
+                            alt="The Walled Garden" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/brochureimage4.jpg"
+                            alt="The Annexe at The Pavilion" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="venue"><img src="assets/images/brochureimage5.jpg"
+                            alt="Inside The Pavilion" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="accommodation"><img src="assets/images/brochureimage6.jpg"
+                            alt="Patience Cottage" loading="lazy" draggable="false"></li>
+                    <li class="gallery__item" data-category="ceremonies"><img src="assets/images/brochureimage7.jpg"
+                            alt="Wedding photography at Oscar's Estate" loading="lazy" draggable="false"></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="faq container" id="faq">
+            <div class="faq__head">
+                <p class="eyebrow">Answering your queries</p>
+                <h2 class="faq__title">Frequently asked<br> questions</h2>
+            </div>
+
+            <div class="faq__list">
+                <div class="faq__item is-open">
+                    <h3 class="faq__q">
+                        <button type="button" class="faq__toggle" aria-expanded="true" aria-controls="faq-1">
+                            <span class="faq__num">Q.01</span>
+                            <span class="faq__question">How much is the initial deposit?</span>
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="faq__answer" id="faq-1">
+                        <div>
+                            <p>We ask for a 30% deposit of your total booking amount.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <h3 class="faq__q">
+                        <button type="button" class="faq__toggle" aria-expanded="false" aria-controls="faq-2">
+                            <span class="faq__num">Q.02</span>
+                            <span class="faq__question">Do you have accommodation on site?</span>
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="faq__answer" id="faq-2">
+                        <div>
+                            <p>Yes, we can currently sleep up to 12 people, between the Lakeside Lodge and Patience
+                                Cottage. We are always expanding Oscars Estate so there may be more accommodation for
+                                your date.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <h3 class="faq__q">
+                        <button type="button" class="faq__toggle" aria-expanded="false" aria-controls="faq-3">
+                            <span class="faq__num">Q.03</span>
+                            <span class="faq__question">Do you allow fireworks?</span>
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="faq__answer" id="faq-3">
+                        <div>
+                            <p>Yes, we do allow fireworks, please discuss this with Jasmin.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <h3 class="faq__q">
+                        <button type="button" class="faq__toggle" aria-expanded="false" aria-controls="faq-4">
+                            <span class="faq__num">Q.04</span>
+                            <span class="faq__question">Can we arrange a viewing?</span>
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="faq__answer" id="faq-4">
+                        <div>
+                            <p>Of course. Send us a message through our <a href="#enquire">enquiry form</a> and we'll
+                                find a time to show you around.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq__item">
+                    <h3 class="faq__q">
+                        <button type="button" class="faq__toggle" aria-expanded="false" aria-controls="faq-5">
+                            <span class="faq__num">Q.05</span>
+                            <span class="faq__question">How far in advance should we book?</span>
+                            <span class="faq__icon" aria-hidden="true"></span>
+                        </button>
+                    </h3>
+                    <div class="faq__answer" id="faq-5">
+                        <div>
+                            <p>Popular dates go quickly, so we recommend enquiring as early as possible to check
+                                availability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brochure" id="brochure">
+            <img class="brochure__img" src="assets/images/brochure.jpg" alt="The Pavilion and lawns at Oscar's Estate"
+                loading="lazy">
+
+            <div class="brochure__card">
+                <h2 class="brochure__title">Our wedding<br> package</h2>
+                <p class="brochure__body">Explore our comprehensive wedding package with all the details for your
+                    perfect day.</p>
+                <a href="brochure.html" class="button button--inline brochure__link">Read the brochure</a>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__info">
+            <p>Weddings, private gatherings and unhurried stays in the English countryside.</p>
+            <address>Oscars Estate, The Dr, Swinfen, Lichfield,<br> WS14 9RE, UK.</address>
+        </div>
+
+        <svg class="footer__wordmark" viewBox="0 0 1000 210" role="img" aria-label="Oscar's">
+            <text x="0" y="206" textLength="1000" lengthAdjust="spacingAndGlyphs">OSCAR&rsquo;S</text>
+        </svg>
+    </footer>
 
 </body>
 
