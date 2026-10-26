@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pavillion">
+    <title>Oscars Estate</title>
+    <link rel="icon" type="image/png" href="assets/images/fav.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-menu">
+            <span class="menu-toggle__lines" aria-hidden="true">
+                <span></span>
+                <span></span>
+            </span>
+            <span class="menu-toggle__label">Menu</span>
+        </button>
+
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo-white.png" alt="Oscar's Estate">
+        </a>
+    </header>
+
+    <nav class="site-menu" id="site-menu" aria-label="Main">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <video class="hero__video" src="assets/images/hero-vid-web.mp4" autoplay muted loop playsinline></video>
+
+            <div class="hero__content">
+                <div class="hero__text">
+                    <p class="hero__eyebrow">A venue hidden away at Swinfen</p>
+                    <h1 class="hero__title">The Pavilion<br> At Oscars.</h1>
+                    <p class="hero__body">Weddings, private gatherings and unhurried stays in the English countryside.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="button">Make an enquiry</a>
+            </div>
+        </section>
+
+        <section class="stats">
+            <ul class="stats__list container">
+                <li>Located in Swinfen</li>
+                <li>Up to XXX guests</li>
+                <li>XX rooms</li>
+                <li>Nature reserve</li>
+                <!-- Duplicate set for the seamless mobile marquee -->
+                <li class="stats__clone" aria-hidden="true">Located in Swinfen</li>
+                <li class="stats__clone" aria-hidden="true">Up to XXX guests</li>
+                <li class="stats__clone" aria-hidden="true">XX rooms</li>
+                <li class="stats__clone" aria-hidden="true">Nature reserve</li>
+            </ul>
+        </section>
+
+        <section class="intro container">
+            <img class="intro__vector" src="assets/images/Vector.png" alt="" aria-hidden="true">
+
+            <p class="eyebrow">Making memories</p>
+            <h2 class="intro__title">Crafting your<br> special day</h2>
+
+            <div class="intro__cols">
+                <p>At Oscar's Estate, we understand that the journey to your big day is as important as the celebration
+                    itself. Our mission is to bring your vision to life, creating a day that is truly remarkable and
+                    unforgettable.</p>
+
+                <div>
+                    <p>The Pavilion has been designed to blend the best of both modern and traditional elements, a
+                        unique, stunning venue like no other. With ample space to host larger, multi-cultural
+                        pre-nuptial events, alongside the serene beauty of lakes and parkland, our venue offers an
+                        atmosphere of tranquility, that is unmatched in the Staffordshire.</p>
+                    <a href="contact.html" class="button button--inline">Enquire now &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature container">
+            <video class="feature__img" src="assets/images/vid2-web.mp4" autoplay muted loop playsinline></video>
+
+            <div class="feature__content">
+                <div>
+                    <p class="eyebrow">For your special day</p>
+                    <h2 class="feature__title">A beautiful place to<br> celebrate properly.</h2>
+                </div>
+
+                <a href="contact.html" class="button">Enquire now &rarr;</a>
+            </div>
+        </section>
+
+        <section class="journey container">
+            <article class="journey__item">
+                <p class="eyebrow">Step foot in Swinfen</p>
+                <h3 class="journey__title">Your arrival</h3>
+                <p>Settle into the venue, walk the walled garden and gather those closest to you prior to the
+                    celebrations.</p>
+            </article>
+
+            <article class="journey__item">
+                <p class="eyebrow">Make memories</p>
+                <h3 class="journey__title">Celebrate together</h3>
+                <p>Embrace our space and make the most out of your special night.</p>
+            </article>
+
+            <article class="journey__item">
+                <p class="eyebrow">Sit back &amp; relax</p>
+                <h3 class="journey__title">Stay a little longer</h3>
+                <p>Whether it's for an outfit change, to relax or to stay over the night - our patience cottage
+                    attends all of your needs.</p>
+            </article>
+        </section>
+
+        <section class="stay container">
+            <div class="stay__media">
+                <img src="assets/images/sectionimg.jpg" alt="The cottage at The Pavilion at dusk" loading="lazy">
+            </div>
+
+            <div class="stay__content">
+                <p class="eyebrow">Stay at the Pavilion</p>
+
+                <div>
+                    <h2 class="stay__title">Wake up where<br> the story happened.</h2>
+                    <p class="stay__body">Tucked away in the grounds, our cottage lets you stay on after the last
+                        dance. Wake to quiet parkland, a slow breakfast and one more look at where it all happened.</p>
+                    <a href="#" class="button button--inline">Discover the Pavilion</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
